@@ -31,9 +31,9 @@ public class ChessGameService {
 
     private Board loadStoredBoard(final Board board, final List<MoveDto> moves) {
         if (isWhiteTurn(moves)) {
-            return new Board(board.getBoard(), WHITE);
+            return Board.from(board.getBoard());
         }
-        return new Board(board.getBoard(), BLACK);
+        return Board.from(board.getBoard(), BLACK);
     }
 
     private boolean isWhiteTurn(final List<MoveDto> moves) {

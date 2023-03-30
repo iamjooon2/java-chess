@@ -13,7 +13,7 @@ public class Board {
     private final Map<Position, Piece> board;
     private Color turn;
 
-    public Board(final Map<Position, Piece> board, final Color turn) {
+    private Board(final Map<Position, Piece> board, final Color turn) {
         this.board = board;
         this.turn = turn;
     }
